@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>AirOS - Desktop</title>
+	
+	<!-- add icon link -->
+<link rel = "icon" href =  "http://quantumbytestudios.000webhostapp.com/AirOS/IMAGES/logotemptrans.png" type = "image/x-icon">
+	
+	<meta charset="utf-8">
+	
+	<!-- <!==STYLESHEET==============================> -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="jquery-ui.min.css">
+	<!-- <!==STYLESHEET==============================> -->
+
+	
+	
+	<!-- <!==JS==============================> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="tbartime.js"></script>
+	<!-- <!==JS==============================> -->
+
+
+</head>
+<body>
+
+
+
+<!-- DESKTOP ICONS -->
+<div class="Icons_holder">
+
+
+	<div class="Icons_holder">
+
+		<button onclick = "OCBROWSER()" id = "browserbtn" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Browser">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Browser.png"></img></center>
+		</button>
+		
+		<button onclick = "OCCALC()" id = "browserbtn" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Calculator">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Calculator.png"></img></center>
+		</button>
+
+		<button onclick = "OCCE()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Code Editor">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Code_Editor.png"></img></center>
+		</button>
+		
+		<button onclick = "OCEXCEL()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Spread Sheets">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Excel.png"></img></center>
+		</button>
+		
+		<button onclick = "OCGAME()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Game">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Games.png"></img></center>
+		</button>
+		
+		<button  onclick = "OCGEEK()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="GeeksForGeeks">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\GeeksForGeeks.png"></img></center>
+		</button>
+		
+		<button onclick = "OCMUSIC()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Music">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Music.png"></img></center>
+		</button>
+		
+		<button onclick = "OCNOTEPAD()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Notepad">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Notepad.png"></img></center>
+		</button>
+		
+		<button onclick = "OCPAINT()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Paint">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Paint.png"></img></center>
+		</button>
+
+		<button onclick = "OCPHOTOEDITOR()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Photopea">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Photopea.png"></img></center>
+		</button>
+		
+		<button onclick = "OCPPT()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Powerpoint">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Powerpoint.png"></img></center>
+		</button>
+		
+		<button onclick = "OCTER()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Terminal">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Terminal.png"></img></center>
+		</button>
+		
+		<button onclick = "OCWIKI()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Wikipedia">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Wikipedia.png"></img></center>
+		</button>
+		
+		<button onclick = "OCWOLF()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Wolframalpha">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Wolframalpha.png"></img></center>
+		</button>
+		
+		<button onclick = "OCWORD()" class = "Iconshell" data-toggle="tooltip" data-placement="bottom" title="Word">
+			<center><img class="IconofIholder" style = "padding: 5px 5px 5px 5px; margin: auto; " src="Icons\Word.png"></img></center>
+		</button>
+		
+	</div>
+
+
+
+</div>
+<!-- DESKTOP ICONS -->
+
+
+
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/20d5978d96/india/" data-label_1="INDIA" data-label_2="WEATHER" data-theme="original" >INDIA WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+
+
+<!--BROWSER OF AIROS-->
+<div id = "browser" class="resizable">
+<div class="Window_Border">
+	<div style = "margin: none; padding: none;" class="btn-group" role="group">
+		<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+		<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Microsoft Binge</button>
+	</div>
+</div>
+<iframe src="https://www.bing.com/" class="Internal_Browser_Window"></iframe>
+</div>
+<!--BROWSER OF AIROS-->
+
+<!--CALCULATOR OF AIROS-->
+<div id = "calcu" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Calculator</button>
+		</div>
+	</div>
+	<iframe src="https://www.online-calculator.com/" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--CALCULATOR OF AIROS-->
+
+<!--CODEEDITOR OF AIROS-->
+<div id = "codeeditor" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Code Editor</button>
+		</div>
+	</div>
+	<iframe src="https://new.code.in" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--CODEEDITOR OF AIROS-->
+
+<!--EXCEL OF AIROS-->
+<div id = "excelwin" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>EXCEL</button>
+		</div>
+	</div>
+	<iframe src="https://www.offidocs.com/loleaflet/dist/loleaflet.html?service=owncloudservice13&file_path=file:///var/www/html/weboffice/mydata/7470686578/NewDocuments/8579708468.xlsx&username=7470686578&ext=yes" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--EXCEL OF AIROS-->
+
+<!--GAME OF AIROS-->
+<div id = "game" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Slither.io</button>
+		</div>
+	</div>
+	<iframe src="https://www.googlesnake.com/" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--GAME OF AIROS-->
+
+<!--GEEK FOR GEEKS OF AIROS-->
+<div id = "geek" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Geek For Geeks</button>
+		</div>
+	</div>
+	<iframe src="https://www.geeksforgeeks.org/" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--GEEK FOR GEEKS OF AIROS-->
+
+<!--MUSIC OF AIROS-->
+<div id = "music" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Music</button>
+		</div>
+	</div>
+	<iframe src="https://www.hungama.com/music/" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--MUSIC OF AIROS-->
+
+<!--NOTEPAD OF AIROS-->
+<div id = "notepad" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Notepad</button>
+		</div>
+	</div>
+	<iframe src="https://onlinenotepad.org/notepad" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--NOTEPAD OF AIROS-->
+
+<!--PAINT OF AIROS-->
+<div id = "paint" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Paint</button>
+		</div>
+	</div>
+	<iframe src="https://canvaspaint.org/" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--PAINT OF AIROS-->
+
+<!--PHOTOEDITOR OF AIROS-->
+<div id = "photoeditor" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Photo Editor</button>
+		</div>
+	</div>
+	<iframe src="https://www.photopea.com" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--PHOTOEDITOR OF AIROS-->
+
+<!--POWERPOINT OF AIROS-->
+<div id = "ppt" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Power Point</button>
+		</div>
+	</div>
+	<iframe src="https://www.offidocs.com/loleaflet/dist/loleaflet.html?service=owncloudservice13&file_path=file:///var/www/html/weboffice/mydata/7470686578/NewDocuments/8788737974.pptx&username=7470686578&ext=yes" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--POWERPOINT OF AIROS-->
+
+<!--TERMINAL OF AIROS-->
+<div id = "ter" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Terminal</button>
+		</div>
+	</div>
+	<iframe src="https://copy.sh/v86/?profile=linux26" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--TERMINALS OF AIROS-->
+
+<!--WIKIPEDIA FOR GEEKS OF AIROS-->
+<div id = "wiki" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Wikipedia</button>
+		</div>
+	</div>
+	<iframe src="https://www.wikipedia.org/" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--WIKIPEDIA OF AIROS-->
+
+<!--WOLFRAMALPHA OF AIROS-->
+<div id = "wolf" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Wolframalpha</button>
+		</div>
+	</div>
+	<iframe src="https://www.wolframalpha.com/" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--WOLFRAMALPHA OF AIROS-->
+
+<!--WORD OF AIROS-->
+<div id = "word" class="resizable">
+	<div class="Window_Border">
+		<div style = "margin: none; padding: none;" class="btn-group" role="group">
+			<!-- <button id="closebrowser" style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 5px 0px 0px 5px;;" type="button" class="btn btn-danger">X</button> -->
+			<button style=" height: auto; font-size: small; padding: 5px 5px 5px 5px; margin: 0px; border-radius: 0px 10px 10px 0px;" type="button" class="btn btn-light" disabled>Word</button>
+		</div>
+	</div>
+	<iframe src="https://www.offidocs.com/loleaflet/dist/loleaflet.html?service=owncloudservice13&file_path=file:///var/www/html/weboffice/mydata/7470686578/NewDocuments/8683878569.docx&username=7470686578&ext=yes" class="Internal_Browser_Window"></iframe>
+	</div>
+<!--WORD OF AIROS-->
+
+
+
+	<script>
+		$(function(){
+		$('.resizable').draggable();
+		$('.resizable').resizable({
+			handles : "n,s,w,e"
+			});
+		});
+	</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<div class="col-6">	
+<div class="Watermark">
+	<img style="padding-right: 10px;" src="IMAGES/logotemptrans.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+	<p style="text-align: center; padding-right: 10px;">Air OS</p>
+</div>
+</div>
+
+<div class="col-6">	
+<div class="AirOS_Taskbar">
+	<script>  
+		var date=new Date();  
+		var day=date.getDate();  
+		var month=date.getMonth()+1;  
+		var year=date.getFullYear();  
+		document.write(" "+day+"/"+month+"/"+year);  
+	</script> 
+	<div style=" padding-left: 10px; padding-right: 10px; margin: 0px; display: block; align-content: center; justify-content: end;" id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+	<p>|</p> &nbsp
+	<a href="OS.html"><img style=" padding-top: 2px; padding-right: 10px;" src="Icons/Restart.png" alt="" width="30" height="20" class="d-inline-block align-text-top" data-toggle="tooltip" data-placement="top" title="Restart"></a>
+	<a href="../index.html"><img style="padding-right: 10px;" src="Icons/Shutdown.png" alt="" width="30" height="20" class="d-inline-block align-text-top" data-toggle="tooltip" data-placement="top" title="Shutdown"></a>
+
+</div>
+</div>
+
+
+<!-- JAVASCRIPT FOR BROWSER -->
+<script>
+
+	function OCBROWSER(){
+		var BROWSER = document.getElementById("browser");
+
+		if(BROWSER.style.display === "none") {
+			BROWSER.style.display = "block"
+		}
+
+		else {
+			BROWSER.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR BROWSER -->
+
+<!-- JAVASCRIPT FOR CALCULATOR -->
+<script>
+
+	function OCCALC(){
+		var CE = document.getElementById("calcu");
+
+		if(CE.style.display === "none") {
+			CE.style.display = "block"
+		}
+
+		else {
+			CE.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR CALCULATOR -->
+
+<!-- JAVASCRIPT FOR CODE EDITOR -->
+<script>
+
+	function OCCE(){
+		var CE = document.getElementById("codeeditor");
+
+		if(CE.style.display === "none") {
+			CE.style.display = "block"
+		}
+
+		else {
+			CE.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR CODE EDITOR -->
+
+
+<!-- JAVASCRIPT FOR EXCEL -->
+<script>
+
+	function OCEXCEL(){
+		var EX = document.getElementById("excelwin");
+
+		if(EX.style.display === "none") {
+			EX.style.display = "block"
+		}
+
+		else {
+			EX.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR EXCEL -->
+
+<!-- JAVASCRIPT FOR GAME -->
+<script>
+
+	function OCGAME(){
+		var GE = document.getElementById("game");
+
+		if(GE.style.display === "none") {
+			GE.style.display = "block"
+		}
+
+		else {
+			GE.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR GAME -->
+
+<!-- JAVASCRIPT FOR GEEK -->
+<script>
+
+	function OCGEEK(){
+		var GFG = document.getElementById("geek");
+
+		if(GFG.style.display === "none") {
+			GFG.style.display = "block"
+		}
+
+		else {
+			GFG.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR GEEK -->
+
+<!-- JAVASCRIPT FOR MUSIC -->
+<script>
+
+	function OCMUSIC(){
+		var MUS = document.getElementById("music");
+
+		if(MUS.style.display === "none") {
+			MUS.style.display = "block"
+		}
+
+		else {
+			MUS.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR MUSIC -->
+
+<!-- JAVASCRIPT FOR NOTEPAD -->
+<script>
+
+	function OCNOTEPAD(){
+		var NP = document.getElementById("notepad");
+
+		if(NP.style.display === "none") {
+			NP.style.display = "block"
+		}
+
+		else {
+			NP.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR NOTEPAD -->
+
+<!-- JAVASCRIPT FOR NOTEPAD -->
+<script>
+
+	function OCPAINT(){
+		var PP = document.getElementById("paint");
+
+		if(PP.style.display === "none") {
+			PP.style.display = "block"
+		}
+
+		else {
+			PP.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR NOTEPAD -->
+
+<!-- JAVASCRIPT FOR PHOTOEDITOR -->
+<script>
+
+	function OCPHOTOEDITOR(){
+		var PE = document.getElementById("photoeditor");
+
+		if(PE.style.display === "none") {
+			PE.style.display = "block"
+		}
+
+		else {
+			PE.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR PHOTOEDITOR -->
+
+<!-- JAVASCRIPT FOR PPT -->
+<script>
+
+	function OCPPT(){
+		var PTT = document.getElementById("ppt");
+
+		if(PTT.style.display === "none") {
+			PTT.style.display = "block"
+		}
+
+		else {
+			PTT.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR PPT -->
+
+<!-- JAVASCRIPT FOR TERMINAL -->
+<script>
+
+	function OCTER(){
+		var TR = document.getElementById("ter");
+
+		if(TR.style.display === "none") {
+			TR.style.display = "block"
+		}
+
+		else {
+			TR.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR TERMINAL -->
+
+<!-- JAVASCRIPT FOR WIKIPEDIA -->
+<script>
+
+	function OCWIKI(){
+		var WKP = document.getElementById("wiki");
+
+		if(WKP.style.display === "none") {
+			WKP.style.display = "block"
+		}
+
+		else {
+			WKP.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR WIKIPEDIA -->
+
+<!-- JAVASCRIPT FOR WOLFRAMALPHA -->
+<script>
+
+	function OCWOLF(){
+		var WA = document.getElementById("wolf");
+
+		if(WA.style.display === "none") {
+			WA.style.display = "block"
+		}
+
+		else {
+			WA.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR WOLFRAMALPHA -->
+
+<!-- JAVASCRIPT FOR WORD -->
+<script>
+
+	function OCWORD(){
+		var WD = document.getElementById("word");
+
+		if(WD.style.display === "none") {
+			WD.style.display = "block"
+		}
+
+		else {
+			WD.style.display = "none"
+		}
+	}
+</Script>
+<!-- JAVASCRIPT FOR WORD -->
+
+
+<!-- -------------------------------------------------------------------- -->
+
+
+
+<!-- JAVASCRIPT FOR TIME \/ -->
+<script>
+
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+  })
+
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
+
+</script>
+
+</html>
